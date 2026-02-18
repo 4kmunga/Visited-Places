@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favourite Places</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="Box">
+        <h1>Places that I've been to🌍</h1>
+        <form id="form-group">
+            <label for="location">Location📍</label>
+            <input type="text" id="location" placeholder="Enter the location" required>
+            
+            <label for="landmark">Landmark😎</label>
+            <input type="text" id="landmark" placeholder="Enter the landmark" required>
+            
+            <label for="timeOfTheYear">Time of the year⏱️</label>
+            <input type="text" id="timeOfTheYear" placeholder="Enter the time">
+
+            <label for="notes">Notes📝</label>
+            <textarea id="notes" placeholder="Enter your notes"></textarea>
+            
+            <label for="imageUrl">Image Url📸</label>
+            <input type="text" id="imageUrl" placeholder="Enter image link">
+            
+            <button type="button" class="btn-add" onclick="handleAddVisitedPlaces()">Add Visited Place</button>
+        </form>
+            
+        <ol id="list-of-places"></ol>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
